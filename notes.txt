@@ -1,0 +1,64 @@
+# a COMMENT
+
+# a FUNCTION
+print("Hello")
+
+# a VARIABLE. the <- is the assignment operator. shows up in 
+# the environment tab when it's ran
+first_variable <- "this is my variable"
+second_variable <- 12.5
+
+# a VECTOR using the (c)ombine function
+first_names <- c('fred', 'joe', 'kelly')
+vec_1 <- c(34, 54,23, 13)
+# returns 54
+vec_1[2] 
+# a vector integers requires L after the number
+vec_int <- c(2L, 4L, 6L)
+# a boolean vector
+vec_bool <- c(TRUE, FALSE, TRUE)
+
+# a PIPE %>% represents a sequence of multiple operations
+ToothGrowth %>% 
+  filter(dose == 0.5) %>% 
+  arrange(len)
+
+# TYPEOF
+ex1 <- c("fred", "sally")
+typeof(ex1) # character
+ex2 <- c(2L, 5L)
+typeof(ex2) # integer
+ex3 <- c(1,2,3)
+typeof(ex3) # double
+
+# LENGTH
+length(ex3) # 3
+
+# LISTS. they are diff from vectors b/c the data can be of any type
+new_list1 <- list(1L, 'dog', TRUE)
+print(new_list1)
+
+# STR() for the structure of a list
+new_list2 <- list(TRUE, 5L, 17, "kelly")
+str(new_list2)
+
+
+# DATES and TIMES
+# needs tidyverse and lubridate packages
+# today() function
+today() # [1] "2024-04-03"
+
+now() # [1] "2024-04-03 21:02:34 PDT"
+
+# DATAFRAME is a collection of columns like SQL
+my_data <- data.frame(x = c(1,2,3), y = c('frank', 'joe', 'sally'))
+View(my_data)
+str(my_data)
+glimpse(my_data)
+
+Data_Frame <- data.frame (
+  Training = c("Strength", "Stamina", "Other"),
+  Pulse = c(100, 150, 120),
+  Duration = c(60, 30, 45)
+)
+View(Data_Frame)
