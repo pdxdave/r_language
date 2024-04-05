@@ -62,4 +62,28 @@ Data_Frame <- data.frame (
   Duration = c(60, 30, 45)
 )
 View(Data_Frame)
-test
+
+
+# VIEWING DATAFRAME 
+str() # structure 
+colnames() # column names 
+head() # first six 
+glimpse() 
+
+# TIBBLES.  This shows you the first ten rows of the dataframe 
+tibbles(dataframe)
+
+# DATA 
+# use data() to view all the data sets by name 
+# to select a data set 
+data(data set name)
+
+# IMPORT CRV FILE INTO RStudio Desktop
+environment tab > import dataset > from text base
+
+# CLEANING DATA STRATEGY. Using starwars as example
+glimpse(starwars) # show all columns and attributes
+class(starwars) # prints the vector of names of classes an object inherits from 
+class(starwars$gender) # character. to mean its datatype is character 
+unique(starwars$gender) # masculine feminine and NA for those not identified
+
